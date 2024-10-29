@@ -41,10 +41,15 @@ Access the Swagger documentation at `/swagger`.
 To create a new project using this boilerplate, run:
 
 ```bash
-bun create 
+# From template
+bun create  ElnurBDa/prisma-elysia-boiler-plate app
+
+cd app
+
+bun run dev
+docker compose up -d
 ```
 
 ## License
 
 This project is licensed under the MIT License.
-
