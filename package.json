@@ -1,0 +1,22 @@
+{
+  "name": "prisma-elysia-boiler-plate",
+  "version": "1.1",
+  "description": "A boilerplate for Prisma and Elysia",
+  "author": "ElnurBDa",
+  "license": "MIT",
+  "scripts": {
+    "test": "bun test",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.1.1",
+    "@elysiajs/swagger": "^1.1.5",
+    "@prisma/client": "5.21.1",
+    "elysia": "latest",
+    "prisma": "^5.21.1"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}

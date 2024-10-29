@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: johndoe
+      POSTGRES_PASSWORD: randompassword
+      POSTGRES_DB: mydb
+    container_name: db
+    ports:
+      - "5432:5432"
+    networks:
+      - custom_network
+
+  prisma-elysia-boiler-plate:
+    image: prisma-elysia-boiler-plate
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+    container_name: prisma-elysia-boiler-plate
+    ports:
+      - "3000:3000"
+    networks:
+      - custom_network
+
+
+networks:
+  custom_network:
