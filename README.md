@@ -46,7 +46,6 @@ bun create  ElnurBDa/prisma-elysia-boiler-plate app
 
 cd app
 
-bun run dev
 docker compose up -d
 ```
 
